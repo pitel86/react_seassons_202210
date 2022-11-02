@@ -3,6 +3,7 @@ import "./App.css";
 import Title from "./components/Title";
 import SubComponents from "./components/SubComponents";
 import Library from "./components/Library";
+import Listado from "./components/Listado";
 
 function App() {
   const title = "mi titulo";
@@ -20,11 +21,14 @@ function App() {
     title: "Quijote",
     author: "Cervantes"
   }]
+
+  const names = ["Sergio", "Dorian", "Alberto"]
   return (
     <div className="App">
 
       <Library libros={books}/>
 
+      {/* <Listado nombres={names}/> */}
 
 
       {/* <Title titulo={title} subtitulo={subtitle}>
